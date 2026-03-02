@@ -1,0 +1,24 @@
+#####################################################################################
+## ISCTE-IUL: Trabalho prático de Sistemas Operativos 2024/2025, Enunciado Versão 1
+##
+## Aluno: Nº: 129838      Nome: José Miguel Oliveira Romeiro
+## Nome do Módulo: S2.3 cron.def
+## Descrição/Explicação do Módulo:
+##
+##  Neste módulo, trabalha-se para agendar a execução do script manutencao.sh.
+##  Escrevi 2 linhas de código, uma para o primeiro horário da execução e 
+##  outra para o segundo (último) horário de execução.
+##
+## Explicação de quais os comandos a usar para configurar o seu sistema Linux
+## usando este ficheiro:
+##
+##  Para configurar o meu sistema Linux vou utilizar o crontab, que é um serviço
+##  do Linux que possibilita agendar a executação de tarefas em horários específicos.
+##  Cada linha do meu código segue esta ordem (exemplo) :
+##    Minuto |Hora | Dia | Mês | Dia-Semana | Comando
+##      59   | 5   |  *  |  *  |    1-5     |   cd /caminho/para && ./manutencao.sh (* - significa que é para qualquer dia/mês)
+##
+#####################################################################################
+
+59 5 * * 1-5 cd /caminho/para && ./manutencao.sh
+01 13 * * 1-5 cd /caminho/para && ./manutencao.sh
